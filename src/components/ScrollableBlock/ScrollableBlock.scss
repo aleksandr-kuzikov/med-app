@@ -1,0 +1,23 @@
+@import '../../assets/scss/vars.scss';
+
+.scrollableBlock {
+  max-height: 100%;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 4px;
+    background-color: $sub-color;
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: $primary-color;
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+}

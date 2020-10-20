@@ -1,0 +1,25 @@
+@import '../../assets/scss/vars.scss';
+
+.sheldueProfile {
+  display: flex;
+  margin: -10px;
+}
+.sheldueProfile__itemWrap {
+  margin: 10px;
+  flex-grow: 1;
+  max-width: 475px;
+}
+.sheldueProfile__item {
+  flex-grow: 1;
+  height: 100%;
+  box-sizing: border-box;
+}
+.sheldueProfile__toSheldue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  line-height: 20px;
+  text-align: center;
+}

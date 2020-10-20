@@ -1,0 +1,35 @@
+@import '../../assets/scss/vars.scss';
+
+.backArrow {
+  margin-right: 14px;
+}
+.calendarPage {
+  display: grid;
+  grid-template-columns: 503px 1fr;
+  grid-gap: 40px;
+}
+.calendarPage__scroll {
+  display: inline-block;
+  margin-left: -5px;
+  margin-top: -5px;
+  max-height: 100%;
+  height: calc(100vh - 130px);
+}
+.calendarPage__calendar {
+  display: inline-block;
+}
+.calendarPage__card {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  margin-left: 5px;
+  &:last-child {
+    margin-bottom: 5px;
+  }
+}
+.calendarPage__showAll {
+  display: block;
+  text-align: right;
+  margin-bottom: 15px;
+  margin-right: 40px;
+}

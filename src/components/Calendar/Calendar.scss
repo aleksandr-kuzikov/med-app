@@ -1,0 +1,91 @@
+
+@import '../../assets/scss/vars.scss';
+
+.calendar {
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+.calendar__head {
+  background-color: $secondary-color;
+  color: $text-color-alt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar__main {
+  width: 100%;
+  table-layout: fixed;
+  background-color: $sub-color;
+  padding: 0 10px;
+  padding-bottom: 70px;
+}
+.calendar__title {
+  display: block;
+  padding: 20px;
+  margin: 0 20px;
+}
+.calendar__button {
+  border: none;
+  color: $text-color-alt;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+.calendar__dayTitleCell {
+  font-weight: 300;
+  padding: 10px;
+  text-align: center;
+}
+// .calendar__week {
+
+// }
+.calendar__dayCell {
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.calendar__dayEvents {
+  height: 22px;
+  text-align: right;
+}
+.calendar__eventButton {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border: none;
+  color: $text-color-alt;
+  background-color: $link-color;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  line-height: 22px;
+}
+
+.calendar__today {
+  color: $secondary-color;
+}
+.calendar__selected {
+  padding: 8px;
+  border: 2px solid $link-color;
+}
+.calendar__dayInThisMounth {
+  background-color: $defaul-color;
+}
+.calendar__dayInPrevMounth {
+  opacity: .25;
+  .calendar__eventButton {
+    cursor: auto;
+  }
+}
+.calendar__dayInNextMounth {
+  visibility: hidden;
+}
+
+.calendar__dayNumber {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1;
+  width: 20px;
+  text-align: center;
+}

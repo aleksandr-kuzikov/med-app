@@ -1,0 +1,31 @@
+@import '../../assets/scss/vars.scss';
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.sideBar__gap {
+  padding: 0 20px;
+}
+.sideBar__head {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  a {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    max-width: $side-width - 40px;
+    max-height: 55px - 20px;
+    object-position: left;
+    object-fit: contain;
+  }
+}
+.sideBar__main {
+  flex-grow: 1;
+}
+.sideBar__footer {
+  padding-bottom: 15px;
+}
